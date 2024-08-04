@@ -8,9 +8,7 @@ using namespace llvm;
 
 namespace astgen {
 bool ASTGenMain(raw_ostream &os, RecordKeeper &Records) {
-  TableGenEmitter emitter(Records);
-  emitter.Run(os);
-  return false;
+  TableGenEmitter emitter()
 }
 
 } // namespace astgen

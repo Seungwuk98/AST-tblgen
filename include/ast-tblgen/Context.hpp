@@ -8,6 +8,7 @@ using namespace llvm;
 
 class Context {
 public:
+  Context() = default;
   ~Context() {
     for (const auto &[ptr, destFn] : destStorage)
       destFn(ptr);

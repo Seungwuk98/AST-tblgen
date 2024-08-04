@@ -3,7 +3,6 @@
 
 #include "llvm/ADT/StringRef.h"
 #include "llvm/Support/FormatVariadic.h"
-#include <format>
 
 namespace astgen::test {
 

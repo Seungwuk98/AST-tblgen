@@ -27,7 +27,7 @@ void Method::print(Printer &printer) const {
     printer.OS() << "static ";
 
   retType->print(printer);
-  printer.OS() << getName() << '(';
+  printer.OS() << ' ' << getName() << '(';
 
   for (auto I = getParams().begin(), E = getParams().end(); I != E; ++I) {
     if (I != getParams().begin())
@@ -64,6 +64,7 @@ void Class::print(Printer &printer) const {
   }
 
   printer.LN() << "};";
+  printer.LN();
 }
 
 } // namespace astgen
